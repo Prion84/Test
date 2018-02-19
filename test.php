@@ -17,41 +17,41 @@ switch ($op) {
             <option value="<?php echo $op;?>"><?php echo $op;?></option>
         <?php }?>
     </select>
-//
-<?php foreach ($operations as $op) { ?>
+<?php//
+ foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>" <?php if ('+' == $op) { ?> selected<?php } ?>><?php echo $op; ?></option>
         <?php } ?>
-?>
-///
+
+///?>
 <?php foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>"  selected> <?php echo $op; ?></option>
         <?php } ?>
-//
-<?php
+<?php//
+
         $operations = ['+', '-', '*', '/'];
         $selected = ' selected'; 
         foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>"  selected> <?php echo $op; ?></option>
         <?php } ?>
-//
-<?php
+<?php//
+
         $operations = ['+', '-', '*', '/'];
         $selected = $op;
         foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>"  selected> <?php echo $op; ?></option>
         <?php } ?>
-//
-<?php
+<?php//
+
         $operations = ['+', '-', '*', '/'];
         $selected = '*';
         foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>"  selected> <?php echo $op; ?></option>
         <?php } ?>
-//
-<?php
+<?php//
+
 $operations = ['+', '-', '*', '/'];
 $selected = '*';
       foreach ($operations as $op) { ?>
             <option value="<?php echo $op; ?>" <?php if ($selected == $op) { ?> selected<? } ?>> <?php echo $op; ?></option>
-        <?php } ?>
-//
+        <?php } 
+//?>
